@@ -1,0 +1,92 @@
+@use "sass:color";
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+.main-header {
+    background-color: rgba(#ffffff, 0.78); // Usando rgba con variable de color
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: $spacing-sm 0;
+    border-top: 5px solid #e0eff7; // Podría ser una variable si se usa más
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        @include flex-center(); // Usamos el mixin
+        justify-content: space-between;
+        padding: 0 $spacing-md;
+
+        @include responsive(tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .logo-section {
+        @include flex-center();
+        gap: $spacing-sm;
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            h1 {
+                font-size: 1.5em;
+                color: $primary-orange;
+                margin: 0;
+                font-weight: 700;
+            }
+            p {
+                font-size: 0.85em;
+                color: #777; // Podría ser una variable
+                margin: 0;
+            }
+        }
+    }
+
+    .main-nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 35px;
+            padding-top: 0px;
+
+            @include responsive(tablet) {
+                flex-direction: column;
+                gap: $spacing-sm;
+                padding: $spacing-sm 0;
+            }
+
+            li {
+                @include responsive(tablet) {
+                    width: 100%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #555; // Podría ser una variable
+                    font-weight: 400;
+                    font-size: 1em;
+                    transition: color $transition-speed $transition-ease;
+
+                    &:hover {
+                        color: $primary-orange;
+                    }
+                }
+            }
+
+            .btn-contacto {
+                @include button-style($primary-orange, white, color.adjust($primary-orange, $lightness: -10%));
+                padding: $spacing-sm $spacing-md;
+                font-weight: 700;
+            }
+        }
+    }
+}

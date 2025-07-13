@@ -1,0 +1,28 @@
+// Importa las variables y mixins primero
+@use 'utils/variables' as *; // 'as *' permite usar las variables directamente ($primary-orange)
+@use 'utils/mixins' as *;   // 'as *' permite usar los mixins directamente (@include flex-center)
+
+// Importa los estilos base
+@use 'base/base';
+@use 'base/reset'; // Descomentado
+@use 'base/typography'; // Descomentado
+
+// Importa los componentes
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+
+// Importa los estilos de layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/hero';
+@use 'layout/sections';
+@use 'layout/grid';
+
+// Importa los estilos específicos de cada página
+@use 'pages/home';
+@use 'pages/adopcion';
+@use 'pages/productos';
+@use 'pages/razas';
+@use 'pages/contacto';
+

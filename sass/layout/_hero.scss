@@ -1,0 +1,32 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
+              url('https://placehold.co/1920x1080') no-repeat center/cover;
+  color: white;
+  padding: $spacing-xxl 0;
+  text-align: center;
+
+  &-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 3.5rem;
+    margin-bottom: $spacing-md;
+  }
+
+  &-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-lg;
+  }
+
+  @include responsive(tablet) {
+    padding: $spacing-xl 0;
+    
+    &-title {
+      font-size: 2.5rem;
+    }
+  }
+}

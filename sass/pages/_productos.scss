@@ -1,0 +1,83 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.productos-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f7e6c7;
+
+    h1 {
+        font-family: "Lilita One", sans-serif;
+        font-size: 3rem;
+        color: $brown-dark;
+        margin-bottom: 20px;
+    }
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.producto-card {
+    background: rgba(255, 245, 202, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: $brown-dark;
+        font-size: 1.5rem;
+    }
+
+    p {
+        color: #555;
+    }
+
+    .precio {
+        font-weight: bold;
+        color: $brown-dark;
+    }
+
+    .comprar-btn {
+        background-color: $brown-dark;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #6a1b00;
+        }
+    }
+
+    @include responsive(tablet) {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    @include responsive(mobile) {
+        width: 95%;
+    }
+}

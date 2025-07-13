@@ -1,0 +1,50 @@
+@use "sass:map";
+@use 'variables' as *;
+
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin card-shadow($shadow: $card-shadow, $hover-shadow: $card-hover-shadow) {
+    box-shadow: 0 5px 15px $shadow;
+    transition: transform $transition-speed $transition-ease, box-shadow $transition-speed $transition-ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px $hover-shadow;
+    }
+}
+
+@mixin button-style($bg-color, $text-color, $hover-bg-color) {
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color $transition-speed $transition-ease, color $transition-speed $transition-ease, border-color $transition-speed $transition-ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: $bg-color;
+    color: $text-color;
+
+    &:hover {
+        background-color: $hover-bg-color;
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint '#{$breakpoint}' no encontrado en el mapa $breakpoints.";
+    }
+}

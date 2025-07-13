@@ -1,0 +1,54 @@
+
+// Colores
+$primary-orange: #0C6AF7;
+$secondary-yellow: #0CB4F7;
+$accent-blue: #0CF7F0;
+$dark-blue-bg: #2c3e50;
+$light-gray: #f4f7f6;
+$text-dark: #333;
+$text-medium: #666;
+$text-light: #aaa;
+$border-light: #ddd;
+$red-heart: #ff4757;
+$brown-dark: #8B2900;
+$light-orange: #ffe0b2;
+$light-blue: #e0f2f7;
+$light-green: #e8f5e9;
+$buttons-home: #0C6EF7;
+$buttons-home-hover :#8CDCFA ;
+
+$white: #ffffff;
+$text-highlight: #5264FA;
+
+// Fuentes
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// Sombras
+$card-shadow: rgba(0, 0, 0, 0.1);
+$card-hover-shadow: rgba(0, 0, 0, 0.15);
+
+// Espaciado
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 40px;
+$spacing-xl: 60px;
+$spacing-xxl: 80px;
+
+// Border Radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-xl: 20px;
+
+// Transiciones
+$transition-speed: 0.3s;
+$transition-ease: ease;
+
+// Breakpoints
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop-sm": 992px,
+  "desktop-md": 1200px
+);

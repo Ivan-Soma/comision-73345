@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.adoption-list {
+    padding: 40px;
+    text-align: left;
+}
+
+.adoption-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid $border-light;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .adoption-info {
+        h2 {
+            margin: 0;
+            color: $brown-dark;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+    }
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            margin-right: 0;
+            margin-bottom: 15px;
+            width: 80%;
+            max-width: 200px;
+        }
+    }
+}
