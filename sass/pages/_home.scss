@@ -459,7 +459,7 @@
 }
 
 .btn-card-details {
-    background-color: $primary-orange;
+    background-color: $buttons-home;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -471,6 +471,7 @@
 
     &:hover {
         background-color: $buttons-home-hover;
+        color: #1a1a1a;
     }
 }
 

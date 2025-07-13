@@ -2,10 +2,10 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 .main-header {
-    background-color: rgba(#ffffff, 0.78); // Usando rgba con variable de color
+    background-color: rgba(#ffffff, 0.78);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: $spacing-sm 0;
-    border-top: 5px solid #e0eff7; // Podría ser una variable si se usa más
+    border-top: 5px solid #e0eff7; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -15,7 +15,7 @@
     .header-content {
         max-width: 1200px;
         margin: 0 auto;
-        @include flex-center(); // Usamos el mixin
+        @include flex-center();
         justify-content: space-between;
         padding: 0 $spacing-md;
 
@@ -43,7 +43,7 @@
             }
             p {
                 font-size: 0.85em;
-                color: #777; // Podría ser una variable
+                color: #777;
                 margin: 0;
             }
         }
@@ -71,7 +71,7 @@
 
                 a {
                     text-decoration: none;
-                    color: #555; // Podría ser una variable
+                    color: #555;
                     font-weight: 400;
                     font-size: 1em;
                     transition: color $transition-speed $transition-ease;
