@@ -52,13 +52,13 @@
 }
 
 .contact-hero-section {
-    background-color: $accent-blue;
+    background: linear-gradient($primary-orange) ;
     color: #ffffff;
     padding: 100px 0;
     text-align: center;
 
     h1 {
-        font-size: 3em;
+        font-size: em;
         margin-bottom: 20px;
         font-weight: 700;
     }

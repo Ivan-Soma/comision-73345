@@ -852,7 +852,7 @@ p {
 }
 
 .icon-blue {
-  background-color: #0CF7F0;
+  background-color: rgba(193, 255, 253, 0.5490196078);
 }
 
 .icon-green {
@@ -1060,7 +1060,7 @@ p {
 }
 
 .btn-card-details {
-  background-color: #0C6AF7;
+  background-color: #0C6EF7;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1072,6 +1072,8 @@ p {
 }
 .btn-card-details:hover {
   background-color: #8CDCFA;
+  color: #053477;
+  text-decoration: bold;
 }
 
 .more-breeds-button {
@@ -1148,7 +1150,7 @@ p {
   text-align: center;
 }
 .benefit-item:hover .benefit-icon-circle {
-  background-color: #0CF7F0;
+  background-color: rgba(193, 255, 253, 0.5490196078);
   color: #ffffff;
 }
 .benefit-item h3 {
@@ -1178,7 +1180,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
-  color: #0CF7F0;
+  color: rgba(193, 255, 253, 0.5490196078);
   margin-bottom: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -1240,7 +1242,7 @@ p {
 }
 .btn-cta-blue:hover {
   background-color: #8CDCFA;
-  color: #1a1a1a;
+  color: #053477;
 }
 @media (max-width: 768px) {
   .btn-cta-blue {
@@ -1342,7 +1344,7 @@ p {
 }
 .btn-subscribe:hover {
   background-color: #8CDCFA;
-  color: #1a1a1a;
+  color: #053477;
 }
 
 .adoption-list {
@@ -1357,7 +1359,7 @@ p {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(153, 208, 245, 0.39);
 }
 .adoption-item img {
   width: 150px;
@@ -1773,13 +1775,13 @@ p {
 }
 
 .contact-hero-section {
-  background-color: #0CF7F0;
+  background: linear-gradient(#0C6AF7);
   color: #ffffff;
   padding: 100px 0;
   text-align: center;
 }
 .contact-hero-section h1 {
-  font-size: 3em;
+  font-size: em;
   margin-bottom: 20px;
   font-weight: 700;
 }

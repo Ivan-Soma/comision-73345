@@ -471,7 +471,8 @@
 
     &:hover {
         background-color: $buttons-home-hover;
-        color: #1a1a1a;
+        color: $buttons-color-font-hover;
+        text-decoration: bold;
     }
 }
 
@@ -649,7 +650,7 @@
 
     &:hover {
         background-color: $buttons-home-hover;
-        color: #1a1a1a;
+        color: $buttons-color-font-hover;
     }
 
     @include responsive(tablet) {
@@ -755,6 +756,6 @@
 
     &:hover {
         background-color: $buttons-home-hover;
-        color: #1a1a1a;
+        color: $buttons-color-font-hover;
     }
 }
