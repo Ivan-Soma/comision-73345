@@ -263,7 +263,6 @@ p {
   background-color: rgba(255, 255, 255, 0.78);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
-  border-top: 5px solid #e0eff7;
   position: fixed;
   width: 100%;
   top: 0;
@@ -282,8 +281,8 @@ p {
 }
 @media (max-width: 768px) {
   .main-header .header-content {
-    flex-direction: column;
-    text-align: center;
+    display: block;
+    background-color: rgb(255, 255, 255);
   }
 }
 .main-header .logo-section {
@@ -318,7 +317,7 @@ p {
 }
 @media (max-width: 768px) {
   .main-header .main-nav ul {
-    flex-direction: column;
+    flex-direction: center;
     gap: 10px;
     padding: 10px 0;
   }
@@ -330,10 +329,15 @@ p {
 }
 .main-header .main-nav ul li a {
   text-decoration: none;
-  color: #555;
+  color: #555555;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.2em;
   transition: color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .main-header .main-nav ul li a {
+    width: 100%;
+  }
 }
 .main-header .main-nav ul li a:hover {
   color: #0C6AF7;

@@ -5,12 +5,12 @@
     background-color: rgba(#ffffff, 0.78);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: $spacing-sm 0;
-    border-top: 5px solid #e0eff7; 
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    
 
     .header-content {
         max-width: 1200px;
@@ -20,8 +20,9 @@
         padding: 0 $spacing-md;
 
         @include responsive(tablet) {
-            flex-direction: column;
-            text-align: center;
+            display: block;
+            background-color: rgb(255, 255, 255);
+
         }
     }
 
@@ -59,7 +60,7 @@
             padding-top: 0px;
 
             @include responsive(tablet) {
-                flex-direction: column;
+                flex-direction: center;
                 gap: $spacing-sm;
                 padding: $spacing-sm 0;
             }
@@ -71,10 +72,14 @@
 
                 a {
                     text-decoration: none;
-                    color: #555;
+                    color: #555555;
                     font-weight: 400;
-                    font-size: 1em;
+                    font-size: 1.2em;
                     transition: color $transition-speed $transition-ease;
+
+                        @include responsive(tablet) {
+                            width: 100%;
+                }
 
                     &:hover {
                         color: $primary-orange;
