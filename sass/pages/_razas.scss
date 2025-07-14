@@ -89,10 +89,10 @@
     }
 
     &:nth-child(1) {
-        border-color: $primary-orange;
+        border-color: $red-heart;
         .about-card-icon {
-            background-color: $light-orange;
-            color: $primary-orange;
+            background-color: $brown-dark;
+            color: $red-heart;
         }
     }
 
@@ -129,7 +129,7 @@
 }
 
 .about-stats-card {
-    background-color: $light-orange;
+    background-color: rgb(209, 247, 253);
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
