@@ -4,7 +4,7 @@
 .productos-section {
     padding: 40px;
     text-align: center;
-    background-color: #f7e6c7;
+    background-color: #d7d9f72c;
 
     h1 {
         font-family: "Lilita One", sans-serif;
@@ -26,12 +26,12 @@
 }
 
 .producto-card {
-    background: rgba(255, 245, 202, 0.9);
+    background: rgba(128, 195, 240, 0.555);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    width: 250px;
+    margin: 40px;
+    padding: 40px;
+    width: 400px;
     transition: transform 0.3s;
 
     &:hover {
@@ -46,16 +46,18 @@
 
     h2 {
         color: $brown-dark;
-        font-size: 1.5rem;
+        font-size: 26px;
     }
 
     p {
-        color: #555;
+        color: #272847;
+        font-size: 20px;
     }
 
     .precio {
         font-weight: bold;
         color: $brown-dark;
+        font-size: 30px;
     }
 
     .comprar-btn {

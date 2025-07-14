@@ -166,8 +166,9 @@
     }
 }
 
+
 .stat-card {
-    background-color: #ffffff;
+    background-color: #c2d6fa9f;
     border-radius: 10px;
     padding: 30px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -650,7 +651,7 @@
 
     &:hover {
         background-color: $buttons-home-hover;
-        color: $buttons-color-font-hover;
+        color: #1a1a1a;
     }
 
     @include responsive(tablet) {
@@ -756,6 +757,6 @@
 
     &:hover {
         background-color: $buttons-home-hover;
-        color: $buttons-color-font-hover;
+        color: #1a1a1a;
     }
 }
