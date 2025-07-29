@@ -1,5 +1,16 @@
+/* ========================================
+   COMPONENTES - TARJETAS
+   ========================================
+   Estilos para tarjetas reutilizables
+   con diferentes secciones y efectos.
+======================================== */
+
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+
+/* ========================================
+   TARJETA BASE
+======================================== */
 .card {
   @include card-shadow();
   background: white;
@@ -7,6 +18,9 @@
   overflow: hidden;
   transition: transform $transition-speed $transition-ease;
 
+  /* ========================================
+     SECCIONES DE LA TARJETA
+  ======================================== */
   &-header {
     padding: $spacing-md;
     border-bottom: 1px solid $border-light;
@@ -21,11 +35,17 @@
     background: $light-gray;
   }
 
+  /* ========================================
+     ELEMENTOS DE LA TARJETA
+  ======================================== */
   &-title {
     font-size: 1.25rem;
     color: $text-dark;
   }
 
+  /* ========================================
+     EFECTOS Y MODIFICADORES
+  ======================================== */
   &-hover {
     &:hover {
       transform: translateY(-5px);

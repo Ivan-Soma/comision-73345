@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ========================================
+         META TAGS Y CONFIGURACIÓN BÁSICA
+    ======================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Paraiso Canino</title>
     
+    <!-- ========================================
+         FAVICON Y FUENTES
+    ======================================== -->
     <link rel="icon" href="assets/patita.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- ========================================
+         HOJAS DE ESTILO
+    ======================================== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
-
+    <!-- ========================================
+         HEADER - NAVEGACIÓN PRINCIPAL
+    ======================================== -->
     <header class="main-header">
         <div class="header-content">
+            <!-- Logo y título del sitio -->
             <div class="logo-section">
                 <img src="assets/patita.jpg" alt="Logo El Paraíso Canino" class="logo-img">
                 <div class="logo-text">
@@ -26,15 +38,14 @@
                 </div>
             </div>
 
-
-
-            <!-- Hamburger Menu Button (Mobile Only) -->
+            <!-- Menú hamburguesa para móviles -->
             <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
 
+            <!-- Navegación principal -->
             <nav class="main-nav" id="mainNav">
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
@@ -46,7 +57,14 @@
             </nav>
         </div>
     </header>
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ======================================== -->
     <main>
+        <!-- ========================================
+             SECCIÓN HERO - BIENVENIDA PRINCIPAL
+        ======================================== -->
         <section class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
@@ -71,6 +89,9 @@
             </div>
         </section>
 
+        <!-- ========================================
+             BARRA DE CONTACTO RÁPIDO
+        ======================================== -->
         <section class="contact-bar">
             <div class="contact-info">
                 <span><a href="tel:+541112345678"><i class="fas fa-phone"></i> +54 11 1234-5678</a></span>
@@ -79,6 +100,9 @@
             </div>
         </section>
 
+        <!-- ========================================
+             SECCIÓN DE ESTADÍSTICAS
+        ======================================== -->
         <section class="stats-section">
             <div class="stats-container">
                 <div class="stat-card">
@@ -108,6 +132,9 @@
             </div>
         </section>
 
+        <!-- ========================================
+             SECCIÓN DE RAZAS DESTACADAS
+        ======================================== -->
         <section class="breeds-section">
             <div class="breeds-header">
                 <h2>Algunas de Nuestras  <span class="highlight-text">Razas Favoritas</span></h2>
@@ -183,12 +210,18 @@
                 </a>
             </div>
         </section>
+
+        <!-- ========================================
+             SECCIÓN ¿POR QUÉ ELEGIRNOS?
+        ======================================== -->
         <section class="why-choose-us-section">
             <div class="container">
                 <h2>¿Por Qué Elegir El Paraíso Canino?</h2>
                 <p class="subtitle">Somos tu aliado de confianza en todo lo relacionado con el mundo canino</p>
 
-                <div class="row justify-content-center"> <div class="col-md-4 mb-4"> <div class="benefit-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="benefit-item">
                             <div class="benefit-icon-circle">
                                 <i class="fas fa-check-circle"></i>
                             </div>
@@ -221,9 +254,13 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
-<section class="cta-section">
+
+        <!-- ========================================
+             SECCIÓN CALL TO ACTION
+        ======================================== -->
+        <section class="cta-section">
             <div class="container">
                 <h2>¿Listo Para Encontrar Tu Compañero Perfecto?</h2>
                 <p>
@@ -240,6 +277,10 @@
                 </div>
             </div>
         </section>
+
+        <!-- ========================================
+             SECCIÓN NEWSLETTER
+        ======================================== -->
         <section class="newsletter-section">
             <div class="container">
                 <h2>¡No Te Pierdas Nada!</h2>
@@ -250,8 +291,11 @@
                 </form>
             </div>
         </section>
+    </main>
 
-        
+    <!-- ========================================
+         FOOTER - PIE DE PÁGINA
+    ======================================== -->
     <footer class="main-footer">
         <div class="footer-top">
             <div class="container footer-grid">
@@ -307,8 +351,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- ========================================
+         SCRIPTS JAVASCRIPT
+    ======================================== -->
     <script>
-        // Hamburger Menu Toggle
+        // ========================================
+        // FUNCIONALIDAD DEL MENÚ HAMBURGUESA
+        // ========================================
         document.addEventListener('DOMContentLoaded', function() {
             const hamburgerMenu = document.getElementById('hamburgerMenu');
             const mainNav = document.getElementById('mainNav');

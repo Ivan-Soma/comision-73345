@@ -1,6 +1,17 @@
+/* ========================================
+   HEADER - NAVEGACIÓN PRINCIPAL
+   ========================================
+   Estilos para el header fijo, logo,
+   navegación y menú hamburguesa móvil.
+======================================== */
+
 @use "sass:color";
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+
+/* ========================================
+   CONTENEDOR PRINCIPAL DEL HEADER
+======================================== */
 .main-header {
     background-color: rgba(#ffffff, 0.78);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -10,7 +21,6 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    
 
     .header-content {
         max-width: 1200px;
@@ -26,7 +36,9 @@
         }
     }
 
-    // Hamburger Menu Button (Mobile Only)
+    /* ========================================
+       MENÚ HAMBURGUESA (SOLO MÓVIL)
+    ======================================== */
     .hamburger-menu {
         display: none;
         flex-direction: column;
@@ -65,6 +77,9 @@
         }
     }
 
+    /* ========================================
+       SECCIÓN DEL LOGO
+    ======================================== */
     .logo-section {
         @include flex-center();
         gap: $spacing-sm;
@@ -89,6 +104,9 @@
         }
     }
 
+    /* ========================================
+       NAVEGACIÓN PRINCIPAL
+    ======================================== */
     .main-nav {
         @include responsive(tablet) {
             position: absolute;
@@ -110,6 +128,7 @@
             }
         }
 
+        // Lista de navegación
         ul {
             list-style: none;
             margin: 0;
@@ -160,6 +179,7 @@
                 }
             }
 
+            // Botón especial de contacto
             .btn-contacto {
                 @include button-style($primary-orange, white, color.adjust($primary-orange, $lightness: -10%));
                 padding: $spacing-sm $spacing-md;

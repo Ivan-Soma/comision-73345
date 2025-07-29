@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ========================================
+         META TAGS Y CONFIGURACIÓN BÁSICA
+    ======================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Paraiso Canino</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>El Paraiso Canino - Contacto</title>
+    
+    <!-- ========================================
+         FAVICON Y FUENTES
+    ======================================== -->
     <link rel="icon" href="../assets/patita.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <!-- ========================================
+         HOJAS DE ESTILO
+    ======================================== -->
+    <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 </head>
 <body>
+    <!-- ========================================
+         HEADER - NAVEGACIÓN PRINCIPAL
+    ======================================== -->
+       <div class="header-content">
+           <!-- Logo y título del sitio -->
+           <div class="logo-section">
+               <img src="../assets/patita.jpg" alt="Logo El Paraíso Canino" class="logo-img">
+               <div class="logo-text">
+                   <h1>El Paraíso Canino</h1>
+                   <p>Tu guía canino de confianza</p>
+               </div>
+           </div>
+           
+           <!-- Menú hamburguesa para móviles -->
+           <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú">
+               <span class="hamburger-line"></span>
+               <span class="hamburger-line"></span>
+               <span class="hamburger-line"></span>
+           </button>
 
-     <header class="main-header">
-        <div class="header-content">
-            <div class="logo-section">
-                <img src="../assets/patita.jpg" alt="Logo El Paraíso Canino" class="logo-img">
-                <div class="logo-text">
-                    <h1>El Paraíso Canino</h1>
-                    <p>Tu guía canino de confianza</p>
-                </div>
-            </div>
-            <!-- Hamburger Menu Button (Mobile Only) -->
-            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+           <!-- Navegación principal -->
+           <nav class="main-nav" id="mainNav">
+               <ul>
+                   <li><a href="../index.html">Inicio</a></li>
+                   <li><a href="../pages/razas.html">Razas</a></li>
+                   <li><a href="../pages/adopcion.html">Adopción</a></li>
+                   <li><a href="../pages/productos.html">Productos</a></li>
+                   <li><a href="../pages/contacto.html">Contacto</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
 
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/razas.html">Razas</a></li>
-                    <li><a href="../pages/adopcion.html">Adopción</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> 
-    
-        <main>
-        <section class="breadcrumb-section">
+   <!-- ========================================
+        CONTENIDO PRINCIPAL
+   ======================================== -->
+   <main>
+       <!-- ========================================
+            BREADCRUMB - NAVEGACIÓN DE MIGAS
+       ======================================== -->
+       <section class="breadcrumb-section">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb custom-breadcrumb">
@@ -56,16 +76,25 @@
             </div>
         </section>
 
+        <!-- ========================================
+             HERO SECTION - TÍTULO PRINCIPAL
+        ======================================== -->
         <section class="contact-hero-section">
             <div class="container">
                 <h1>¡Estamos Aquí para Ayudarte!</h1>
                 <p>¿Tienes preguntas sobre nuestros servicios, razas de perros o el proceso de adopción? Nuestro equipo está listo para brindarte toda la información que necesitas.</p>
             </div>
         </section>
+
+        <!-- ========================================
+             CONTENIDO DE CONTACTO - FORMULARIO E INFO
+        ======================================== -->
         <section class="contact-content-section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-form-card card-base"> <div class="form-header">
+                    <!-- Formulario de contacto -->
+                    <div class="contact-form-card card-base">
+                        <div class="form-header">
                             <div class="form-icon-circle"> <i class="fas fa-envelope"></i>
                             </div>
                             <h3>Envíanos un Mensaje</h3>
@@ -103,6 +132,7 @@
                             <button type="submit" class="btn btn-primary form-submit-btn">Enviar Mensaje</button> </form>
                     </div>
 
+                    <!-- Sidebar con información adicional -->
                     <div class="contact-sidebar">
                         <div class="sidebar-card help-card card-base">
                             <h4>¿Necesitas Ayuda Inmediata?</h4>
@@ -143,7 +173,11 @@
                 </div>
             </div>
         </section>
-                <section class="stats-section">
+
+        <!-- ========================================
+             SECCIÓN DE ESTADÍSTICAS
+        ======================================== -->
+        <section class="stats-section">
             <div class="stats-container">
                 <div class="stat-card">
                     <div class="icon-wrapper icon-orange">
@@ -171,9 +205,12 @@
                 </div>
             </div>
         </section>
-        
     </main>
-<footer class="main-footer">
+
+    <!-- ========================================
+         FOOTER - PIE DE PÁGINA
+    ======================================== -->
+    <footer class="main-footer">
         <div class="footer-top">
             <div class="container footer-grid">
                 <div class="footer-col about-us">
@@ -228,8 +265,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- ========================================
+         SCRIPTS JAVASCRIPT
+    ======================================== -->
     <script>
-        // Hamburger Menu Toggle
+        // ========================================
+        // FUNCIONALIDAD DEL MENÚ HAMBURGUESA
+        // ========================================
         document.addEventListener('DOMContentLoaded', function() {
             const hamburgerMenu = document.getElementById('hamburgerMenu');
             const mainNav = document.getElementById('mainNav');

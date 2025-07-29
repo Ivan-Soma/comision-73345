@@ -1,19 +1,36 @@
+/* ========================================
+   COMPONENTES - BOTONES
+   ========================================
+   Estilos para diferentes tipos de botones
+   utilizando el mixin button-style.
+======================================== */
+
 @use "sass:color";
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
+/* ========================================
+   BOTÓN BASE
+======================================== */
 .btn {
-    @include button-style(transparent, $text-dark, transparent); // Base para todos los botones
-    // Propiedades comunes que no cambian con el color
+    @include button-style(transparent, $text-dark, transparent);
+    // Base para todos los botones con propiedades comunes
 }
 
+/* ========================================
+   VARIANTES DE BOTONES
+======================================== */
+// Botón principal (naranja)
 .btn-primary {
     @include button-style($primary-orange, white, color.adjust($primary-orange, $lightness: -10%));
 }
 
+// Botón secundario (amarillo/azul claro)
 .btn-secondary {
     @include button-style($secondary-yellow, $text-dark, color.adjust($secondary-yellow, $lightness: -10%));
 }
+
+// Botón con borde blanco
 .btn-outline-white {
     @include button-style(transparent, white, white);
     border: 2px solid white;

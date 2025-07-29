@@ -1,25 +1,44 @@
+/* ========================================
+   ARCHIVO PRINCIPAL DE ESTILOS SASS
+   ========================================
+   Este archivo importa todos los módulos SASS
+   organizados por categorías para mantener
+   un código limpio y modular.
+======================================== */
+
+/* ========================================
+   UTILIDADES - Variables y Mixins
+======================================== */
 // Importa las variables y mixins primero
 @use 'utils/variables' as *; // 'as *' permite usar las variables directamente ($primary-orange)
 @use 'utils/mixins' as *;   // 'as *' permite usar los mixins directamente (@include flex-center)
 
-// Importa los estilos base
+/* ========================================
+   ESTILOS BASE - Reset, Tipografía y Base
+======================================== */
 @use 'base/base';
-@use 'base/reset'; // Descomentado
-@use 'base/typography'; // Descomentado
+@use 'base/reset';
+@use 'base/typography';
 
-// Importa los componentes
+/* ========================================
+   COMPONENTES - Elementos Reutilizables
+======================================== */
 @use 'components/buttons';
 @use 'components/cards';
 @use 'components/forms';
 
-// Importa los estilos de layout
+/* ========================================
+   LAYOUT - Estructura de la Página
+======================================== */
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/hero';
 @use 'layout/sections';
 @use 'layout/grid';
 
-// Importa los estilos específicos de cada página
+/* ========================================
+   PÁGINAS - Estilos Específicos por Página
+======================================== */
 @use 'pages/home';
 @use 'pages/adopcion';
 @use 'pages/productos';

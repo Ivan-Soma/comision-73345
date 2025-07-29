@@ -1,6 +1,17 @@
+/* ========================================
+   LAYOUT - FOOTER
+   ========================================
+   Estilos para el pie de página con
+   información de contacto, enlaces y
+   redes sociales.
+======================================== */
+
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
+/* ========================================
+   CONTENEDOR PRINCIPAL DEL FOOTER
+======================================== */
 .main-footer {
     background-color: $dark-blue-bg;
     color: #ffffff;
@@ -13,6 +24,9 @@
     }
 }
 
+/* ========================================
+   SECCIÓN SUPERIOR DEL FOOTER
+======================================== */
 .footer-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 40px;
@@ -22,6 +36,9 @@
     }
 }
 
+/* ========================================
+   GRID DE COLUMNAS DEL FOOTER
+======================================== */
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;
@@ -35,6 +52,9 @@
     }
 }
 
+/* ========================================
+   COLUMNAS DEL FOOTER
+======================================== */
 .footer-col {
     h3 {
         font-size: 1.3em;
@@ -127,6 +147,9 @@
     }
 }
 
+/* ========================================
+   ICONOS DE REDES SOCIALES
+======================================== */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -146,12 +169,18 @@
     }
 }
 
+/* ========================================
+   SECCIÓN INFERIOR DEL FOOTER
+======================================== */
 .footer-bottom {
     background-color: #243447;
     padding: 20px 0;
     text-align: center;
 }
 
+/* ========================================
+   INFORMACIÓN DE COPYRIGHT
+======================================== */
 .copyright {
     display: flex;
     justify-content: center;
@@ -175,6 +204,9 @@
     }
 }
 
+/* ========================================
+   BOTÓN SCROLL TO TOP
+======================================== */
 .scroll-to-top {
     background-color: $primary-orange;
     color: white;

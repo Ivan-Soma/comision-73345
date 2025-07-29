@@ -1,4 +1,13 @@
-/* Normalize básico + reset personalizado */
+/* ========================================
+   RESET CSS
+   ========================================
+   Reset básico y normalize personalizado
+   para consistencia entre navegadores.
+======================================== */
+
+/* ========================================
+   RESET UNIVERSAL
+======================================== */
 *,
 *::before,
 *::after {
@@ -7,29 +16,46 @@
   box-sizing: border-box;
 }
 
+/* ========================================
+   CONFIGURACIÓN DEL HTML
+======================================== */
 html {
   scroll-behavior: smooth;
 }
 
-
+/* ========================================
+   ELEMENTOS MULTIMEDIA
+======================================== */
 img, picture, video, canvas, svg {
   max-width: 100%;
   display: block;
 }
 
+/* ========================================
+   ELEMENTOS DE FORMULARIO
+======================================== */
 input, button, textarea, select {
   font: inherit;
 }
 
+/* ========================================
+   ENLACES
+======================================== */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* ========================================
+   LISTAS
+======================================== */
 ul, ol {
   list-style: none;
 }
 
+/* ========================================
+   BOTONES
+======================================== */
 button {
   background: none;
   border: none;

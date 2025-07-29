@@ -1,52 +1,83 @@
 
-// Colores
+/* ========================================
+   VARIABLES SASS
+   ========================================
+   Definición de todas las variables globales
+   del proyecto organizadas por categorías.
+======================================== */
+
+/* ========================================
+   PALETA DE COLORES
+======================================== */
+// Colores principales
 $primary-orange: #0C6AF7;
 $secondary-yellow: #0CB4F7;
 $accent-blue: #006cf1;
-$dark-blue-bg: #2c3e50;
-$light-gray: #f4f7f6;
-$text-dark: #333;
-$text-medium: #666;
-$text-light: #aaa;
-$border-light: #ddd;
-$red-heart: #ff4757;
-$brown-dark: #0e1558;
-$light-orange: #8CDCFA;
-$light-blue: #e0f2f7;
-$light-green: #e8f5e9;
-$buttons-home: #0C6EF7;
-$buttons-home-hover : #8CDCFA ;
-$buttons-color-font-hover : #053477 ;
-
 $white: #ffffff;
 $text-highlight: #5264FA;
 
-// Fuentes
+// Colores de fondo
+$dark-blue-bg: #2c3e50;
+$light-gray: #f4f7f6;
+$brown-dark: #0e1558;
+
+// Colores de texto
+$text-dark: #333;
+$text-medium: #666;
+$text-light: #aaa;
+
+// Colores de borde
+$border-light: #ddd;
+
+// Colores especiales
+$red-heart: #ff4757;
+$light-orange: #8CDCFA;
+$light-blue: #e0f2f7;
+$light-green: #e8f5e9;
+
+// Colores de botones
+$buttons-home: #0C6EF7;
+$buttons-home-hover: #8CDCFA;
+$buttons-color-font-hover: #053477;
+
+/* ========================================
+   TIPOGRAFÍA
+======================================== */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
 
-// Sombras
+/* ========================================
+   SOMBRAS
+======================================== */
 $card-shadow: rgba(0, 0, 0, 0.1);
 $card-hover-shadow: rgba(0, 0, 0, 0.15);
 
-// Espaciado
+/* ========================================
+   ESPACIADO
+======================================== */
 $spacing-sm: 10px;
 $spacing-md: 20px;
 $spacing-lg: 40px;
 $spacing-xl: 60px;
 $spacing-xxl: 80px;
 
-// Border Radius
+/* ========================================
+   BORDER RADIUS
+======================================== */
 $border-radius-sm: 5px;
 $border-radius-md: 10px;
 $border-radius-lg: 15px;
 $border-radius-xl: 20px;
 
-// Transiciones
+/* ========================================
+   TRANSICIONES
+======================================== */
 $transition-speed: 0.3s;
 $transition-ease: ease;
 
-// Breakpoints
+/* ========================================
+   BREAKPOINTS RESPONSIVOS
+======================================== */
 $breakpoints: (
   "mobile": 480px,
   "tablet": 768px,
